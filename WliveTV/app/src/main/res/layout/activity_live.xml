@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#22000000"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/fl_videoview"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorBlack">
+
+        <com.ywl5320.wlivetv.ijkplayer.media.IjkVideoView
+            android:id="@+id/videoview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:background="@color/colorTopBar">
+        </com.ywl5320.wlivetv.ijkplayer.media.IjkVideoView>
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#de262a3b">
+
+            <TextView
+                android:id="@+id/tv_load_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/pb_loading"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="6dp"
+                android:textColor="#ffffff"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_loading"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="60dp"
+                android:indeterminate="false"
+                android:indeterminateDrawable="@drawable/video_loading"
+                android:padding="5dp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ly_floor"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorToolbar"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/iv_fullscreen"
+                android:layout_width="55dp"
+                android:layout_height="55dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/bg_live_fullscreen_seletor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/id_title"
+        layout="@layout/include_common_title_left_right" />
+
+    <RelativeLayout
+        android:id="@+id/ly_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/fl_videoview"
+        android:background="@color/colorGrayWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="16dp"
+            android:text="温馨提示\n本视频源来自于网络，有可能出现暂时不能播放的情况，请见谅。我们会定期更新视频源，给您一个良好的观看体验！( ^_^ )"
+            android:textColor="@color/colorGray" />
+
+    </RelativeLayout>
+    <View
+        android:id="@+id/v_close"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    <TextView
+        android:id="@+id/tv_app_msg"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:text="免责声明"
+        android:textColor="@color/colorTopBar" />
+
+    <TextView
+        android:id="@+id/tv_relief"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/iv_icon"
+        android:layout_marginBottom="-172dp"
+        android:background="@color/colorGrayWhitedeep"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="12dp"
+        android:clickable="true"
+        android:text="免责声明：\n\n本App完全免费，其影视内容均来源于互联网，视频版权属于原有版权商，本App仅提供页面播放服务，并不提供影片资源存储，也不参与录制、上传，如有侵犯您的权益，请发送相关证明文件及时与我们联系(QQ:596353036)，我们将在第一时间进行相应的处理。"
+        android:textColor="@color/colorGray" />
+
+</RelativeLayout>

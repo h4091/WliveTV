@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/include_common_title_left"/>
+    <ImageView
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:src="@mipmap/icon_app_show"/>
+    <TextView
+        android:id="@+id/tv_version"
+        android:layout_below="@+id/iv_icon"
+        android:layout_marginTop="12dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/iv_icon"
+        android:text="免责声明：\n\n本App完全免费，其影视内容均来源于互联网，视频版权属于原有版权商，本App仅提供页面播放服务，并不提供影片资源存储，也不参与录制、上传，如有侵犯您的权益，请发送相关证明文件及时与我们联系(QQ:596353036)，我们将在第一时间进行相应的处理。"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="All Rights Reserved (2015)"/>
+</RelativeLayout>

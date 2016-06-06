@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorTransplate">#00000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTopBar">#262A3B</color>
+    <color name="colorGray">#84000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGrayWhite">#cccccc</color>
+    <color name="colorPress">#6b6a6a</color>
+    <color name="colorDivider">#949494</color>
+    <color name="colorNormal">#898989</color>
+    <color name="colorToolbar">#99262A3B</color>
+    <color name="colorMenu">#cc262A3B</color>
+    <color name="colorGrayWhitedeep">#c1c1c1</color>
+</resources>

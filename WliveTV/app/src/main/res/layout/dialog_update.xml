@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ly_pay_error_pay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ly_pay_error_child"
+        android:layout_width="300dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:background="@drawable/bg_dialog_selector"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_title_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dip"
+            android:layout_marginTop="20dp"
+            android:text="有新版本"
+            android:textColor="@color/colorBlack"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_update_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dip"
+            android:layout_marginTop="21dp"
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:id="@+id/btn_download"
+                android:layout_width="100dp"
+                android:layout_height="35dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/bg_btn_seletor"
+                android:text="下载"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>
